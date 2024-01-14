@@ -1,9 +1,10 @@
+"use strict";
 function getCeil(arr, target) {
-    var l = 0;
-    var r = arr.length - 1;
-    var ceil = -1;
+    let l = 0;
+    let r = arr.length - 1;
+    let ceil = -1;
     while (l <= r) {
-        var mid = Math.floor((l + r) / 2);
+        let mid = Math.floor((l + r) / 2);
         if (arr[mid] == target) {
             return target;
         }
@@ -17,6 +18,6 @@ function getCeil(arr, target) {
     }
     return ceil;
 }
-var ar = [10, 12, 23, 34, 39, 40, 45, 52, 59, 63, 70, 90, 101];
-var val = getCeil(ar, 93);
+let ar = [10, 12, 23, 34, 39, 40, 45, 52, 59, 63, 70, 90, 101];
+let val = getCeil(ar, 93);
 console.log(val);
