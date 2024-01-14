@@ -8,7 +8,6 @@ function getmax(arr: number[]): number {
 let arr = [5, 4, 2, 1, 6, 7];
 // let result = getmax([1,2,5,6,7,8,9])
 // console.log(result)
-
 function printBarChart(arr: number[]): void {
   let cols = arr.length;
   let rows = getmax(arr);
