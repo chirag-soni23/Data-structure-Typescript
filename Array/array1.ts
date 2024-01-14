@@ -5,7 +5,7 @@ function getmax(arr: number[]): number {
   }
   return maxi;
 }
-let arr = [5,4,2,1,6,7];
+let arr = [5, 4, 2, 1, 6, 7];
 // let result = getmax([1,2,5,6,7,8,9])
 // console.log(result)
 
@@ -17,11 +17,10 @@ function printBarChart(arr: number[]): void {
     for (let j = 0; j < cols; j++) {
       if (arr[j] >= rows) s += "*";
       else s += " ";
-    }  
+    }
     console.log(s);
     // console.log(rows--)
     rows--;
   }
 }
 printBarChart(arr);
-
