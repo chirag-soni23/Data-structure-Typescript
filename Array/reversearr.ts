@@ -14,6 +14,7 @@ let Arr = [1,2,3,4,5,6]
 reverseArr(Arr)
 console.log(Arr)
 
+// Reverse in range  =>
 
 function reverseRange(arr:number[],l:number,r:number){
    while(l<r){
