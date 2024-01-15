@@ -14,3 +14,16 @@ function reverseArr(arr) {
 let Arr = [1, 2, 3, 4, 5, 6];
 reverseArr(Arr);
 console.log(Arr);
+function reverseRange(arr, l, r) {
+    while (l < r) {
+        // swap arr[l] <-> arr[r]
+        let temp = arr[l];
+        arr[l] = arr[r];
+        arr[r] = temp;
+        l++;
+        r--;
+    }
+}
+let Arrr = [1, 2, 3, 4, 5, 6];
+reverseRange(Arrr, 2, 5);
+console.log(Arrr);
