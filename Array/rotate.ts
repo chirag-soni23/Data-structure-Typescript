@@ -20,5 +20,5 @@ var rotate = function (nums:number[],k:number){
 }
 
 let nums = [1,2,3,4,5,6]
-reverseInrange(nums,2,5)
+rotate(nums,3)
 console.log(nums)

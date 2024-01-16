@@ -17,5 +17,5 @@ var rotate = function (nums, k) {
     reverseInrange(nums, 0, n - 1);
 };
 let nums = [1, 2, 3, 4, 5, 6];
-reverseInrange(nums, 2, 5);
+rotate(nums, 3);
 console.log(nums);
