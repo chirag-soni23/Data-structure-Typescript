@@ -16,3 +16,4 @@ function iteration1(arr: number[][]) {
   console.log(s);
 }
 iteration1(aarr);
+
