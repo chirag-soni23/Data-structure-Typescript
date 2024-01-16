@@ -13,7 +13,7 @@ function reversearr(arr:number[]){
         l++;
         r--
     }
-    for(let i = 0;i<arr3.length;i++){
+    for(let i = 0;i<arr.length;i++){
         reversearr(arr4[i])
     }
 }
