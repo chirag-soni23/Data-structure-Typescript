@@ -22,7 +22,6 @@ function rotatearr(arr) {
     for (let i = 0; i < arr.length; i++) {
         // console.log(i)
         for (let j = i; j < arr[0].length; j++) {
-            console.log(arr[i][j]);
             let temp = arr[i][j];
             arr[i][j] = arr[j][i];
             arr[j][i] = temp;
