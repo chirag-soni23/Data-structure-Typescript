@@ -11,5 +11,5 @@ function palindrome(str) {
         return true;
     }
 }
-let res = palindrome("racecars");
+let res = palindrome("racecar");
 console.log(res);
