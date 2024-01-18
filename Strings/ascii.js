@@ -11,7 +11,7 @@ function toggleCase(s) {
             // I am a capital letter,convert me to small letter by adding 32
             ascii += 32;
         }
-        // I am a small letter,convert me to small letter by minus 32
+        // I am a small letter,convert me to capital letter by minus 32
         else {
             ascii -= 32;
         }
