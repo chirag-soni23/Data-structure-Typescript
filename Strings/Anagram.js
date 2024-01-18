@@ -21,5 +21,5 @@ function isAnagram(s, t) {
     }
     return true;
 }
-let anagramResult = isAnagram('slient', 'listens');
+let anagramResult = isAnagram('slient', 'listen');
 console.log(anagramResult);
