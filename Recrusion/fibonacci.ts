@@ -11,3 +11,5 @@ function fibonacci(n:number):number{
     return nm1 + nm2
 }
 console.log(fibonacci(8))
+
+
