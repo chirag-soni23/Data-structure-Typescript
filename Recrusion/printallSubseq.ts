@@ -1,5 +1,6 @@
 // asf => answer so far
 function printer(arr:number[],idx:number,asf:string){
+    // Base Case
     if(idx == arr.length){
         console.log(asf)
         return;

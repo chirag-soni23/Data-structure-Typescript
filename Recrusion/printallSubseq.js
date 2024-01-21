@@ -1,6 +1,7 @@
 "use strict";
 // asf => answer so far
 function printer(arr, idx, asf) {
+    // Base Case
     if (idx == arr.length) {
         console.log(asf);
         return;
