@@ -10,4 +10,4 @@ function printer(arr, idx, asf) {
     // idxth if not idx
     printer(arr, idx + 1, asf);
 }
-console.log(printer([10, 20, 30], 0, ""));
+printer([10, 20, 30], 0, "");
