@@ -1,9 +1,9 @@
 // toh => Tower of hanoi
-function toh(s:string,d:string,h:string,n:number){
+function toh(n:number,s:string,d:string,h:string){
     if(n==0)return;
-    toh(s,h,d,n-1)
+    toh(n-1,s,h,d)
     console.log(`Move disc ${n} from ${s} to ${d}`)
-    toh(h,d,s,n-1)
+    toh(n-1,h,d,s)
 
 }
-toh("a","b","c",3)
+toh(3,"a","b","c")
