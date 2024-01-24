@@ -23,6 +23,7 @@ function treeConstructors(arr) {
 }
 let treee = [6, 16, 26, -1, -1, -1, 36, 44, -1, -1, 56, -1, -1];
 let rooot = treeConstructors(treee);
+// Size of node
 function getSize(node) {
     if (node == null)
         return 0;
@@ -30,4 +31,13 @@ function getSize(node) {
     let rightSize = getSize(node.right);
     return leftSize + rightSize + 1;
 }
-console.log(getSize(rooot));
+// maximum no. of node
+function getMax(node) {
+    if (node == null)
+        return -Infinity;
+    let leftmaxNode = getMax(node.left);
+    let rightmaxNode = getMax(node.right);
+    return Math.max(node.val, Math.max(leftmaxNode, rightmaxNode));
+}
+// console.log(getSize(rooot))
+console.log(getMax(rooot));
