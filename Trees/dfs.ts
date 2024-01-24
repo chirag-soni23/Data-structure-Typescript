@@ -9,25 +9,23 @@ class TreeNode {
     this.right = null;
   }
 }
-let i = 0
-function treeConstructor(arr:number[]):TreeNode|null{
-  if(arr[i]==-1){
-    i++
-    return null
+let i = 0;
+function treeConstructor(arr: number[]): TreeNode | null {
+  if (arr[i] == -1) {
+    i++;
+    return null;
   }
   // nn => new node
-  let nn = new TreeNode(arr[i])
+  let nn = new TreeNode(arr[i]);
   i++;
   let leftChild = treeConstructor(arr);
-  let rightChild = treeConstructor(arr)
-  nn.left = leftChild
-  nn.right = rightChild
-  return nn
-
-
+  let rightChild = treeConstructor(arr);
+  nn.left = leftChild;
+  nn.right = rightChild;
+  return nn;
 }
-let tree = [6,16,26,-1,-1,-1,36,44,-1,-1,56,-1,-1]
-let root = treeConstructor(tree)
+let tree = [6, 16, 26, -1, -1, -1, 36, 44, -1, -1, 56, -1, -1];
+let root = treeConstructor(tree);
 let preOrder: number[] = [];
 let inOrder: number[] = [];
 let postOrder: number[] = [];
@@ -46,6 +44,6 @@ function dfs(node: TreeNode | null): void {
   postOrder.push(node.val);
 }
 dfs(root);
-console.log(preOrder)
-console.log(inOrder)
-console.log(postOrder)
+console.log(preOrder);
+console.log(inOrder);
+console.log(postOrder);
