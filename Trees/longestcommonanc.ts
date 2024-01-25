@@ -66,8 +66,8 @@ function lowestCommonAncestor(
   }
   return ans;
 }
-let targetNodeValue1 = 36;
-let targetNodeValue2 = 44;
+let targetNodeValue1 = 16;
+let targetNodeValue2 = 36;
 
 let targetNode1 = new TreeNode4(targetNodeValue1);
 let targetNode2 = new TreeNode4(targetNodeValue2);
