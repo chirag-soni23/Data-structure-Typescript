@@ -1,8 +1,8 @@
 // DFS => Depth First Search
 class TreeNode2 {
   val: number;
-  left: TreeNode | null;
-  right: TreeNode | null;
+  left: TreeNode2 | null;
+  right: TreeNode2 | null;
   constructor(val: number) {
     this.val = val;
     this.left = null;
