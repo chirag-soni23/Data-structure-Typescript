@@ -1,7 +1,7 @@
 class TreeNode1 {
     val: number;
-    left: TreeNode | null;
-    right: TreeNode | null;
+    left: TreeNode1 | null;
+    right: TreeNode1 | null;
     constructor(val: number) {
       this.val = val;
       this.left = null;
@@ -9,7 +9,7 @@ class TreeNode1 {
     }
   }
   let ix = 0;
-  function treeConstructors(arr: number[]): TreeNode | null {
+  function treeConstructors(arr: number[]): TreeNode1 | null {
     if (arr[ix] == -1) {
       ix++;
       return null;
