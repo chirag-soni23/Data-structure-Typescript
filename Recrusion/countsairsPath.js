@@ -5,7 +5,7 @@ function countStairspath(n, currStair) {
         return 1;
     if (currStair > n)
         return 0;
-    // recrusve function
+    // recrusive function
     let one = countStairspath(n, currStair + 1);
     let two = countStairspath(n, currStair + 2);
     let three = countStairspath(n, currStair + 3);
