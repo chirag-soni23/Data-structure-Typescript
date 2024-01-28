@@ -34,6 +34,7 @@ class LinkedList {
             this.size++;
         };
         this.addFirst = (val) => {
+            // TC: O(1), SC: O(1)
             let nn = new ListNode(val);
             if (this.size == 0) {
                 this.head = nn;
@@ -44,6 +45,48 @@ class LinkedList {
                 this.head = nn;
             }
             this.size++;
+        };
+        this.removeFirst = () => {
+            var _a, _b, _c;
+            if (this.size == 0) {
+                console.log("Linkedlist is already empty");
+                return -1;
+            }
+            else if (this.size == 1) {
+                let ret = (_a = this.head) === null || _a === void 0 ? void 0 : _a.val;
+                this.head = null;
+                this.tail = null;
+                this.size--;
+                return ret;
+            }
+            else { // size > 1
+                let ret = (_b = this.head) === null || _b === void 0 ? void 0 : _b.val;
+                this.head = ((_c = this.head) === null || _c === void 0 ? void 0 : _c.next) || null;
+                this.size--;
+                return ret;
+            }
+        };
+        this.removeLast = () => {
+            var _a, _b;
+            if (this.size == 0) {
+                console.log("Linkedlist is already empty");
+                return -1;
+            }
+            else if (this.size == 1) {
+                let ret = (_a = this.head) === null || _a === void 0 ? void 0 : _a.val;
+                this.head = null;
+                this.tail = null;
+                this.size--;
+                return ret;
+            }
+            else { //size > 1
+                let ret = (_b = this.tail) === null || _b === void 0 ? void 0 : _b.val;
+                let temp = this.head;
+                while (temp.next != this.tail) {
+                    temp = temp.next;
+                }
+                temp.next = null;
+            }
         };
         this.size = 0;
         this.head = null;
@@ -57,4 +100,6 @@ ll.addLast(40);
 ll.addLast(50);
 ll.addLast(60);
 ll.addFirst(10);
+console.log(ll.removeFirst());
+console.log(ll.removeLast());
 ll.display();
