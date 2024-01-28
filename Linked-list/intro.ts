@@ -93,6 +93,9 @@ class LinkedList {
             temp = temp!.next;
         }
         temp!.next = null
+        this.tail = temp
+        this.size--
+        return ret
 
     }
   };
