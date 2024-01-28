@@ -47,6 +47,7 @@ class LinkedList {
         this.size++;
     };
     addFirst = (val:number):void=>{
+        // TC: O(1), SC: O(1)
         let nn = new ListNode(val);
         if(this.size == 0){
             this.head = nn;
