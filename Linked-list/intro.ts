@@ -31,7 +31,7 @@ class LinkedList {
             s += temp.val + " -> ";
             temp = temp.next;
         }
-        console.log(s);
+        console.log(`${s} null`);
     };
 
     addLast = (val: number): void => {
