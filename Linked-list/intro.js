@@ -51,10 +51,10 @@ class LinkedList {
     }
 }
 let ll = new LinkedList();
-ll.addLast(1);
-ll.addLast(6);
-ll.addLast(3);
-ll.addLast(4);
-ll.addLast(7);
+ll.addLast(20);
+ll.addLast(30);
+ll.addLast(40);
+ll.addLast(50);
+ll.addLast(60);
 ll.addFirst(10);
 ll.display();
