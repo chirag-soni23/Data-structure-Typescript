@@ -99,6 +99,17 @@ class LinkedList {
 
     }
   };
+  getAt=(target:number):ListNode|null=>{
+    if(target < 0 || target>=this.size)return null
+    let temp = this.head
+    let i = 0
+    while(i<target){
+      temp = temp!.next
+      i++
+    }
+    return temp
+
+  }
 }
 
 let ll = new LinkedList();
@@ -109,6 +120,7 @@ ll.addLast(40);
 ll.addLast(50);
 ll.addLast(60);
 ll.addFirst(10);
-console.log(ll.removeFirst());
-console.log(ll.removeLast());
+// console.log(ll.removeFirst());
+// console.log(ll.removeLast());
+console.log(ll.getAt(2))
 ll.display();
