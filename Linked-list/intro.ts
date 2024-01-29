@@ -101,7 +101,7 @@ class LinkedList {
   };
   getAt=(target:number):ListNode|null=>{
     if(target < 0 || target>=this.size)return null
-    let temp = this.head
+    let temp:ListNode|null = this.head
     let i = 0
     while(i<target){
       temp = temp!.next
