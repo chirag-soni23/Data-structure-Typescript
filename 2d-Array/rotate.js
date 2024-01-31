@@ -1,7 +1,7 @@
 "use strict";
 let arr4 = [
     [1, 2, 3],
-    [4, 5, 6], // => 90 degree rotate
+    [4, 5, 6],
     [7, 8, 9],
 ];
 function reversearr(arr) {
@@ -14,19 +14,20 @@ function reversearr(arr) {
         l++;
         r--;
     }
-    for (let i = 0; i < arr.length; i++) {
-        reversearr(arr4[i]);
-    }
 }
 function rotatearr(arr) {
+    // Transpose the matrix
     for (let i = 0; i < arr.length; i++) {
-        // console.log(i)
         for (let j = i; j < arr[0].length; j++) {
             let temp = arr[i][j];
             arr[i][j] = arr[j][i];
             arr[j][i] = temp;
         }
     }
-    console.log(arr);
+    // Reverse each row
+    for (let i = 0; i < arr.length; i++) {
+        reversearr(arr4[i]);
+    }
 }
 rotatearr(arr4);
+console.log(arr4);
