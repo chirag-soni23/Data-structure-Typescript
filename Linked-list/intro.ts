@@ -68,7 +68,8 @@ class LinkedList {
       this.tail = null;
       this.size--;
       return ret;
-    } else { // size > 1
+    } else {
+      // size > 1
       let ret = this.head?.val;
       this.head = this.head?.next || null;
       this.size--;
@@ -85,31 +86,29 @@ class LinkedList {
       this.tail = null;
       this.size--;
       return ret;
-    }
-    else{ //size > 1
-        let ret = this.tail?.val
-        let temp = this.head
-        while(temp!.next != this.tail){
-            temp = temp!.next;
-        }
-        temp!.next = null
-        this.tail = temp
-        this.size--
-        return ret
-
+    } else {
+      //size > 1
+      let ret = this.tail?.val;
+      let temp = this.head;
+      while (temp!.next != this.tail) {
+        temp = temp!.next;
+      }
+      temp!.next = null;
+      this.tail = temp;
+      this.size--;
+      return ret;
     }
   };
-  getAt=(target:number):ListNode|null=>{
-    if(target < 0 || target>=this.size)return null
-    let temp:ListNode|null = this.head
-    let i = 0
-    while(i<target){
-      temp = temp!.next
-      i++
+  getAt = (target: number): ListNode | null => {
+    if (target < 0 || target >= this.size) return null;
+    let temp: ListNode | null = this.head;
+    let i = 0;
+    while (i < target) {
+      temp = temp!.next;
+      i++;
     }
-    return temp
-
-  }
+    return temp;
+  };
 }
 
 let ll = new LinkedList();
@@ -122,5 +121,5 @@ ll.addLast(60);
 ll.addFirst(10);
 // console.log(ll.removeFirst());
 // console.log(ll.removeLast());
-console.log(ll.getAt(2))
+console.log(ll.getAt(2));
 ll.display();
