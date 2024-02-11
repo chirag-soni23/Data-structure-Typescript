@@ -59,7 +59,8 @@ class LinkedList {
                 this.size--;
                 return ret;
             }
-            else { // size > 1
+            else {
+                // size > 1
                 let ret = (_b = this.head) === null || _b === void 0 ? void 0 : _b.val;
                 this.head = ((_c = this.head) === null || _c === void 0 ? void 0 : _c.next) || null;
                 this.size--;
@@ -79,7 +80,8 @@ class LinkedList {
                 this.size--;
                 return ret;
             }
-            else { //size > 1
+            else {
+                //size > 1
                 let ret = (_b = this.tail) === null || _b === void 0 ? void 0 : _b.val;
                 let temp = this.head;
                 while (temp.next != this.tail) {
